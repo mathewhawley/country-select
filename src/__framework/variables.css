@@ -1,0 +1,63 @@
+:root {
+  --fg: #111111;
+  --bg: #fefefe;
+  --border: #ccc;
+  --accent: #ff8a4c;
+  --secondary: #e74694;
+
+  --gradient-1: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--accent)
+  );
+  --gradient-1-flip: linear-gradient(
+    to bottom left,
+    var(--secondary),
+    var(--accent)
+  );
+
+  /* Code */
+  --code-fg: var(--fg);
+  --code-bg: #ececec;
+
+  /* Sidebar */
+  --sidebar-width: 50px;
+  --sidebar-bg: var(--bg);
+  --sidebar-fg: var(--fg);
+  --sidebar-toggle-fg: #444;
+  --sidebar-toggle-fg-active: var(--fg);
+  --sidebar-content-fg: var(--fg);
+  --sidebar-content-bg: #f6f6f6;
+
+  /* Playground */
+  --bg-alt: #fefefe;
+  --fg-alt: var(--fg);
+
+  /* Button */
+  --button-fg: #fff;
+  --button-bg: var(--gradient-1);
+}
+
+/* NOTE: Dark Mode disabled for now.
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  :root {
+    --fg: #eaeaea;
+    --bg: #111;
+    --border: #555;
+
+    --code-fg: var(--fg);
+    --code-bg: #333;
+
+    --bg-alt: #222;
+    --fg-alt: #fafafa;
+
+    --sidebar-toggle-fg: #ccc;
+    --sidebar-toggle-fg-active: #eee;
+    --sidebar-content-fg: #dadada;
+    --sidebar-content-bg: #1c1c1c;
+  }
+} */

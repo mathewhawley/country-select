@@ -1,0 +1,134 @@
+.sidebar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 100%;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-fg);
+  transition: transform 180ms ease-in-out;
+  transform: translateX(calc(100% - var(--sidebar-width)));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 680px) {
+  .sidebar {
+    max-width: 600px;
+  }
+}
+.sidebar * {
+  overflow-wrap: anywhere;
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.sidebar:hover .instructionsLabel {
+  opacity: 0.8;
+}
+
+.instructionsLabel {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 11px;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: auto;
+  opacity: 0.5;
+}
+
+.toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 0 auto;
+  width: var(--sidebar-width);
+  padding: 1rem 0 0;
+  border: none;
+  background: none;
+  color: var(--sidebar-toggle-fg);
+}
+.toggle:hover,
+.toggle:active {
+  color: #ff8a4c !important;
+}
+.is-open .toggle {
+  color: var(--sidebar-toggle-fg-active);
+}
+.peek {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.peek a:hover,
+.peek a:active {
+  color: var(--accent);
+}
+
+.caption {
+  align-self: flex-start;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 0.8;
+  padding: 0;
+  margin: 7px 0 1rem;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: auto;
+}
+
+.content {
+  border-left: 1px solid rgba(128, 128, 128, 0.05);
+  color: var(--sidebar-content-fg);
+  background-color: var(--sidebar-content-bg);
+  height: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.content h2:first-child {
+  margin-top: 7px;
+  color: var(--fg);
+  line-height: 1;
+}
+
+.content code {
+  font-size: 95%;
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  line-height: 1;
+  background: var(--code-bg);
+  color: var(--code-fg);
+}
+
+.content blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--code-bg);
+}
