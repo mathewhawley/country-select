@@ -51,8 +51,9 @@
   --background-hover: var(--blue-3);
   --background-selected: var(--blue-1);
 
-  --border: var(--white);
+  --border-default: var(--white); /* --border name clash with framework, would ns with scss */
   --border-width: var(--width-1);
+  --border-disabled: var(--grey-3);
   --border-active: var(--blue-2);
 
   --shadow: var(--shadow-1);
