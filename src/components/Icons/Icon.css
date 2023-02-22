@@ -1,11 +1,7 @@
 .icon {
-  fill: var(--text);
+  fill: currentColor;
   width: 24px;
   height: 24px;
-}
-
-.icon--selected {
-  fill: var(--text-selected);
 }
 
 .icon--90 {

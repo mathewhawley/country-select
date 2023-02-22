@@ -3,9 +3,20 @@
   font-size: var(--text-size);
   font-weight: var(--text-weight);
   padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
 }
 
-.drop-down-item:hover {
+.drop-down-item:not(.drop-down-item--selected):hover {
   background-color: var(--background-hover);
   color: var(--text-hover);
+}
+
+.drop-down-item--selected {
+  background-color: var(--background-selected);
+  color: var(--text-selected);
+}
+
+.drop-down-item__right-element {
+  margin-left: auto;
 }

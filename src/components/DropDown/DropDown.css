@@ -1,3 +1,7 @@
+.drop-down {
+  position: relative;
+}
+
 .drop-down__label {
   display: block;
   margin-bottom: var(--space-1);
@@ -13,6 +17,10 @@
   border-radius: var(--input-radius);
 }
 
+.drop-down__input:hover {
+  box-shadow: var(--input-shadow-hover);
+}
+
 .drop-down__label,
 .drop-down__input {
   font-size: var(--text-size);
@@ -20,8 +28,14 @@
 }
 
 .drop-down__panel {
+  width: 100%;
+  position: absolute;
+  margin-top: var(--space-2);
   padding: var(--space-2) 0;
   box-shadow: var(--input-shadow);
+  border-radius: var(--input-radius);
+  max-height: 300px;
+  overflow-x: auto;
 }
 
 .drop-down__icon {
@@ -30,5 +44,6 @@
   width: 24px;
   height: 24px;
   margin-left: auto;
+  color: var(--text);
 }
 
