@@ -1,0 +1,74 @@
+:root {
+  /* Base variables: Context agnostic */
+
+  --black: #000000;
+  --white: #ffffff;
+  --blue-1: #0E7DFF;
+  --blue-2: #0139FF;
+  --blue-3: #DFECFF;
+  --grey-1: #8E8D8D;
+  --grey-2: #F4F4F4;
+  --grey-3: #DFDFDF;
+  --grey-4: #838181;
+  --red-1: #FF0E0E;
+  --red-2: #FFDCDC;
+
+  --opacity-1: 0.1;
+  --opacity-2: 0.2;
+
+  --shadow-1: 0px 4px 34px rgb(0 0 0 / var(--opacity-1));
+  --shadow-2: 0px 4px 34px rgb(0 0 0 / var(--opacity-2));
+
+  --font-size-1: 15px;
+  --font-size-2: 40px;
+
+  --width-1: 2px;
+
+  --radius-1: 10px;
+
+  /* Alias variables: Semantic */
+
+  --text: var(--black);
+  --text-weak: var(--grey-1);
+  --text-disabled: var(--grey-1);
+  --text-hover: var(--blue-2);
+  --text-selected: var(--blue-2);
+
+  --text-size: var(--font-size-1);
+  --text-weight: var(--font-size-1);
+
+  --text-heading-size: var(--font-size-2);
+  --text-heading-weight: var(--font-size-2);
+
+  --background: var(--white);
+  --background-weak: var(--grey-2);
+  --background-disabled: var(--grey-3);
+  --background-hover: var(--blue-3);
+  --background-selected: var(--blue-1);
+
+  --border: var(--white);
+  --border-width: var(--width-1);
+  --border-active: var(--blue-2);
+
+  --shadow: var(--shadow-1);
+  --shadow-hover: var(--shadow-2);
+  --shadow-active: var(--shadow-2);
+  --shadow-selected: var(--shadow-2);
+
+  --danger-text: var(--red-1);
+  --danger-text-weak: var(--grey-1);
+  --danger-background: var(--red-2);
+  --danger-border: var(--red-1);
+
+  /* Alias variables: Elements */
+
+  --input-radius: var(--radius-1);
+  --input-text: var(--text);
+  --input-placeholder: var(--text-weak);
+  --input-border-active: var(--border-active);
+  --input-border-width: var(--border-width-1);
+  --input-shadow: var(--shadow);
+  --input-shadow-active: var(--shadow-active);
+  --input-shadow-hover: var(--shadow-hover);
+  --input-shadow-selected: var(--shadow-hover);
+}
