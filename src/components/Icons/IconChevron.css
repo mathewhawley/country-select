@@ -1,0 +1,21 @@
+.icon {
+  fill: var(--text);
+  width: 24px;
+  height: 24px;
+}
+
+.icon--selected {
+  fill: var(--text-selected);
+}
+
+.icon--90 {
+  transform: rotate(90);
+}
+
+.icon--180 {
+  transform: rotate(180deg);
+}
+
+.icon--270 {
+  transform: rotate(270deg);
+}

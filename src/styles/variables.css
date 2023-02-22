@@ -26,6 +26,11 @@
 
   --radius-1: 10px;
 
+  --space-1: 5px;
+  --space-2: 7px;
+  --space-3: 10px;
+  --space-4: 17px;
+
   /* Alias variables: Semantic */
 
   --text: var(--black);

@@ -1,0 +1,11 @@
+.drop-down-item {
+  color: var(--input-text);
+  font-size: var(--text-size);
+  font-weight: var(--text-weight);
+  padding: var(--space-3) var(--space-4);
+}
+
+.drop-down-item:hover {
+  background-color: var(--background-hover);
+  color: var(--text-hover);
+}
