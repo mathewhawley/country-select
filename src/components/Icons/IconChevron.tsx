@@ -1,5 +1,5 @@
 import "./Icon.css"
-import cn from "classnames";
+import clsx from "clsx";
 
 interface Props {
   rotate?: "90" | "180" | "270";
@@ -8,7 +8,7 @@ interface Props {
 export function IconChevron({ rotate }: Props) {
   return (
     <svg
-      className={cn("icon", rotate && `icon--${rotate}`)}
+      className={clsx("icon", rotate && `icon--${rotate}`)}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       role="presentation"

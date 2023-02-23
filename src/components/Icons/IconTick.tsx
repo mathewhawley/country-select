@@ -1,15 +1,18 @@
-import "./Icon.css"
+import "./Icon.css";
 
 export function IconTick() {
   return (
     <svg
       className="icon"
+      width="18"
+      height="14"
+      viewBox="0 0 18 14"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
       role="presentation"
     >
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+      <path
+        d="M18 1.99997L6 14L0.5 8.49997L1.91 7.08997L6 11.17L16.59 0.589966L18 1.99997Z"
+      />
     </svg>
   );
 }
