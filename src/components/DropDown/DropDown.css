@@ -16,6 +16,11 @@
   align-items: center;
   border-radius: var(--input-radius);
   border: var(--border-width) solid var(--border-default);
+  position: relative;
+}
+
+.drop-down__input--populated {
+  color: var(--input--text);
 }
 
 .drop-down__input--disabled {
@@ -42,25 +47,34 @@
 }
 
 .drop-down__label,
-.drop-down__input {
+.drop-down__input,
+.drop-down__error-msg {
   font-size: var(--text-size);
   font-weight: var(--text-weight);
 }
 
+.drop-down__value {
+  width: 100%;
+  padding-right: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drop-down__error-msg {
+  color: var(--danger-text);
+}
+
 .drop-down__panel {
-  display: none;
   width: 100%;
   position: absolute;
   margin-top: var(--space-2);
   padding: var(--space-2) 0;
   box-shadow: var(--input-shadow);
   border-radius: var(--input-radius);
-  max-height: 300px;
+  max-height: 280px;
   overflow-x: auto;
-}
-
-.drop-down__panel--active {
-  display: block;
+  background-color: var(--white);
 }
 
 .drop-down__icon {
@@ -70,4 +84,6 @@
   height: 24px;
   margin-left: auto;
   color: var(--text);
+  position: absolute;
+  right: var(--space-3);
 }

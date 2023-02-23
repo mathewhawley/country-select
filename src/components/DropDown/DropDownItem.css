@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.drop-down-item:not(.drop-down-item--selected):hover {
+.drop-down-item:not(.drop-down-item--empty):hover {
   background-color: var(--background-hover);
   color: var(--text-hover);
 }
@@ -19,4 +19,5 @@
 
 .drop-down-item__right-element {
   margin-left: auto;
+  padding-left: var(--space-3);
 }
