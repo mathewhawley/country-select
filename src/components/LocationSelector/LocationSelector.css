@@ -1,0 +1,16 @@
+.location-selector__container {
+  display: flex;
+}
+
+.location-selector__continents,
+.location-selector__countries {
+  width: 300px;
+}
+
+.location-selector__continents {
+  margin-right: var(--space-6);
+}
+
+.location-selector__results {
+  margin-top: var(--space-6);
+}

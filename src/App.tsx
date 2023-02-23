@@ -1,14 +1,17 @@
-import { useEffect } from "react";
-import { fetchContinents } from "./utils/fetch-continents";
-import { fetchCountries } from "./utils/fetch-countries";
+import "./styles/variables.css";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools"
+import { LocationSelector } from "./components/LocationSelector/LocationSelector"
+
+const queryClient = new QueryClient();
 
 function App() {
-  useEffect(() => {
-    fetchContinents().then(console.log);
-    fetchCountries().then(console.log);
-  }, []);
-
-  return <div>My Code</div>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <LocationSelector />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

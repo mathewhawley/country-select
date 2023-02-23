@@ -1,0 +1,5 @@
+.anchor {
+  color: var(--link);
+  font-weight: var(--text-weight-emphasis);
+  text-decoration: var(--link-decoration);
+}

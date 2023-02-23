@@ -1,0 +1,17 @@
+.location-results {
+  box-shadow: var(--shadow);
+  padding: var(--space-5);
+  background: var(--background);
+  display: inline-block;
+  border-radius: var(--radius-1);
+  font-size: var(--text-size);
+}
+
+.location-results__heading,
+.location-results__body {
+  margin: 0;
+}
+
+.location-results__heading {
+  font-weight: var(--text-heading-weight);
+}
